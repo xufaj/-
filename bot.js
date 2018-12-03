@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 var prefix = "d";
-var adminprefix = "²"
+var adminprefix = "*"
 const developers = ["446999223183998987"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -41,12 +41,7 @@ client.on('message', message => {
             
 	
  message.author.sendMessage(`
-²sets ستريمينق
-²setw واتشينق 
-²setl ليسينيق 
-²setavatar تغيير الافاتار
-²setname تغيير الاسم
-    
+
 });
  
  
