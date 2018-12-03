@@ -34,6 +34,19 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
   client.user.setAvatar(argresult);
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === adminprefix + "help") {
+		 message.channel.send('**The Message Was Sent On Private**');
+            
+	
+ message.author.sendMessage(`
+²sets ستريمينق
+²setw واتشينق 
+²setl ليسينيق 
+²setavatar تغيير الافاتار
+²setname تغيير الاسم
+    
 });
  
  
